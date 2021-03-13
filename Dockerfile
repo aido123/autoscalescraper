@@ -10,8 +10,8 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o detector .
+RUN go build -o autoscalescraper .
 
 EXPOSE 2112
 
-CMD ["./detector"]
+CMD ["./autoscalescraper"]
